@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Full-Stack Development Track",
+    "duration": "16 weeks",
+    "level": "Beginner to job-ready",
+    "description": "From fundamentals to a production-grade capstone, built with a real mentor team."
+  },
+  {
+    "title": "Software Internship Program",
+    "duration": "12 weeks",
+    "level": "Intermediate",
+    "description": "Work directly on live client projects under senior engineer supervision."
+  },
+  {
+    "title": "Open Source Contributor Track",
+    "duration": "Self-paced",
+    "level": "All levels",
+    "description": "Structured onboarding into Stucknot's public repositories, with mentor code review."
+  }
+]

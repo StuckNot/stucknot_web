@@ -1,0 +1,23 @@
+[
+  {
+    "name": "RetailFlow Inventory Dashboard",
+    "client": "Regional Retail Chain",
+    "summary": "Real-time inventory tracking across 40+ store locations.",
+    "tags": ["Django", "React", "PostgreSQL"],
+    "year": 2025
+  },
+  {
+    "name": "PayEase Merchant Portal",
+    "client": "Fintech Startup",
+    "summary": "Merchant onboarding and transaction reporting platform.",
+    "tags": ["Next.js", "Node.js", "Stripe API"],
+    "year": 2025
+  },
+  {
+    "name": "CampusConnect Mobile App",
+    "client": "EdTech Client",
+    "summary": "Cross-platform app connecting students with campus services.",
+    "tags": ["Flutter", "Firebase"],
+    "year": 2024
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "posts": [
+    { "title": "Debugging Async Race Conditions in Node.js", "date": "2026-06-02", "readTime": "6 min" },
+    { "title": "Why We Mentor Every Intern on Real Client Code", "date": "2026-05-18", "readTime": "4 min" },
+    { "title": "Scaling a Django App to 40 Store Locations", "date": "2026-04-27", "readTime": "8 min" }
+  ],
+  "repos": [
+    { "name": "stucknot/cli-toolkit", "description": "Internal CLI tools, open for community contributions.", "stars": 48 },
+    { "name": "stucknot/mentor-lms", "description": "Lightweight LMS used in our mentorship program.", "stars": 31 }
+  ]
+}

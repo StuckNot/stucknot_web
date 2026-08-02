@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stucknot — Software. Education. One Company.</title>
+  <meta name="description" content="Stucknot builds production software and trains developers through structured mentorship. One team, two things we're proud of.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-view="company">
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a class="logo-img" aria-label="Stucknot Home">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#achievements">About</a></li>
+      </ul>
+      <div class="header-right">
+        <button class="base-button secondary-btn" aria-label="Request a quote">Get a Quote</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero-bg brand-dark">
+    <div class="brand-glow-blob"></div>
+    <div class="hero-header">
+      <div class="audience-toggle" role="tablist" aria-label="Choose your audience">
+        <button class="toggle-btn active" data-view="company" role="tab" aria-selected="true">For Businesses</button>
+        <button class="toggle-btn" data-view="student" role="tab" aria-selected="false">For Students</button>
+      </div>
+      <div class="hero-content-wrapper">
+        <div class="hero-text-col" id="fade-text">
+          <div class="trust-line" id="trust-line"></div>
+          <div class="hero-eyebrow" id="eyebrow"></div>
+          <h1 class="hero-heading-text" id="headline"></h1>
+          <p class="hero-subheading-text" id="subheading"></p>
+          <div class="hero-header-buttons" id="cta-buttons"></div>
+        </div>
+        <div class="hero-illustration-col">
+          <div class="hero-anim">
+            <!-- Glow blob background -->
+            <div class="hero-anim-glow"></div>
+            <!-- Orbiting ring -->
+            <div class="hero-anim-orbit">
+              <div class="orbit-dot orbit-dot-1"></div>
+              <div class="orbit-dot orbit-dot-2"></div>
+              <div class="orbit-dot orbit-dot-3"></div>
+            </div>
+            <!-- Floating code card 1 -->
+            <div class="hero-float-card card-1">
+              <div class="float-card-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <div class="float-card-line w80"></div>
+              <div class="float-card-line w60 accent"></div>
+              <div class="float-card-line w90"></div>
+              <div class="float-card-line w40"></div>
+            </div>
+            <!-- Floating code card 2 -->
+            <div class="hero-float-card card-2">
+              <div class="float-card-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <div class="float-card-line w70 accent"></div>
+              <div class="float-card-line w50"></div>
+              <div class="float-card-line w85"></div>
+            </div>
+            <!-- Center icon -->
+            <div class="hero-anim-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-12M4 8l-2 4 2 4M20 8l2 4-2 4"/>
+              </svg>
+            </div>
+            <!-- Floating badges -->
+            <div class="hero-badge badge-1">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#AC0D30" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+              <span>Shipped</span>
+            </div>
+            <div class="hero-badge badge-2">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#AC0D30" stroke-width="2"><path d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
+              <span>Mentored</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summarise-section">
+      <div class="summarise-details">
+        <div class="summarise-details-list-upper">
+          <div class="summarise-details-list" id="fade-cards"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="our-story section decor-host">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container">
+      <div class="our-story-bento reveal">
+        <!-- Main Text Card -->
+        <div class="bento-card bento-text">
+          <span class="section-eyebrow">OUR STORY</span>
+          <h2 class="section-heading">One team. Two things we're proud of.</h2>
+          <p class="accent-text">
+            Stucknot started as a way to prepare students for the industry while they were still in
+            college. Along the way we started taking on real client work — and realized the two
+            weren't separate: the best developers we trained were the ones who'd shipped something
+            real, and the best client work came from people who'd been properly mentored, not just hired.
+            So we stopped running them as two businesses.
+          </p>
+        </div>
+        
+        <!-- Image Card -->
+        <div class="bento-card bento-image">
+          <img src="images/team-collaboration.jpg" alt="Stucknot team collaboration" loading="lazy" decoding="async">
+        </div>
+        
+        <!-- Flywheel Card -->
+        <div class="bento-card bento-flywheel">
+          <div class="flywheel-wrap">
+            <div class="flywheel">
+              <svg class="flywheel-ring" viewBox="0 0 340 340">
+                <defs>
+                  <linearGradient id="lineGradTop" x1="0%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6" />
+                  </linearGradient>
+                  <linearGradient id="lineGradBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6" />
+                  </linearGradient>
+                  <linearGradient id="lineGradLeft" x1="100%" y1="0%" x2="0%" y2="0%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6" />
+                  </linearGradient>
+                  <linearGradient id="lineGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6" />
+                  </linearGradient>
+                </defs>
+                <!-- Connecting lines -->
+                <line x1="170" y1="170" x2="170" y2="22" stroke="url(#lineGradTop)" stroke-width="1.5" opacity="0.6" />
+                <line x1="170" y1="170" x2="170" y2="318" stroke="url(#lineGradBottom)" stroke-width="1.5" opacity="0.6" />
+                <line x1="170" y1="170" x2="22" y2="170" stroke="url(#lineGradLeft)" stroke-width="1.5" opacity="0.6" />
+                <line x1="170" y1="170" x2="318" y2="170" stroke="url(#lineGradRight)" stroke-width="1.5" opacity="0.6" />
+                <!-- Dashed orbit ring -->
+                <circle cx="170" cy="170" r="148" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5 9" opacity="0.15" />
+                <!-- Directional arrows -->
+                <path d="M170 16 l10 18 h-20 z" fill="#ffffff" opacity="0.3" transform="rotate(35 170 170)" />
+                <path d="M170 16 l10 18 h-20 z" fill="#ffffff" opacity="0.3" transform="rotate(125 170 170)" />
+                <path d="M170 16 l10 18 h-20 z" fill="#ffffff" opacity="0.3" transform="rotate(215 170 170)" />
+                <path d="M170 16 l10 18 h-20 z" fill="#ffffff" opacity="0.3" transform="rotate(305 170 170)" />
+              </svg>
+              <div class="flywheel-center">
+                <div class="flywheel-center-label">ONE<br>COMPANY</div>
+              </div>
+              <div class="flywheel-node node-top">
+                <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 14l-2.5-2.5a2 2 0 00-2.8 0L4 13.2M13 14l2.5-2.5a2 2 0 012.8 0L20 13.2M11 14l1 1a1.5 1.5 0 002-2M13 14l-1 1a1.5 1.5 0 01-2-2" />
+                  </svg></div>
+                <div class="node-label">Client Projects</div>
+              </div>
+              <div class="flywheel-node node-right">
+                <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 15a5 5 0 100-10 5 5 0 000 10z" />
+                    <path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2" />
+                  </svg></div>
+                <div class="node-label">Mentor-Led Delivery</div>
+              </div>
+              <div class="flywheel-node node-bottom">
+                <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="6" cy="6" r="2.4" />
+                    <circle cx="6" cy="18" r="2.4" />
+                    <circle cx="18" cy="12" r="2.4" />
+                    <path d="M6 8.4v7.2M8.2 7l7.6 3.8M8.2 17l7.6-3.8" />
+                  </svg></div>
+                <div class="node-label">Open Source</div>
+              </div>
+              <div class="flywheel-node node-left">
+                <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z" />
+                    <path d="M3 12l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5" />
+                  </svg></div>
+                <div class="node-label">Careers, Not<br>Certificates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED WORK ============ -->
+  <section class="section decor-host" id="work">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container">
+      <span class="section-eyebrow">FEATURED WORK</span>
+      <h2 class="section-heading">Real projects, real businesses.</h2>
+      <div class="card-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section class="section programs decor-host" id="programs">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container reveal">
+      <span class="section-eyebrow">PROGRAMS</span>
+      <h2 class="section-heading">Structured paths, not loose tutorials.</h2>
+      <div class="programs-tabs-container" id="programs-tabs"></div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section tech-section decor-host" id="tech">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container reveal tech-flex-container">
+      <div class="tech-text-wrap">
+        <span class="section-eyebrow">OUR TECH STACK</span>
+        <h2 class="section-heading" style="margin-bottom: 0; font-size: 24px;">Built with tools that scale.</h2>
+      </div>
+      <div class="tech-marquee-wrapper" id="tech-marquee"></div>
+    </div>
+  </section>
+
+  <!-- ============ OPEN SOURCE & BLOG ============ -->
+  <section class="section oss-blog decor-host" id="blog">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container reveal">
+      <span class="section-eyebrow">BUILDING IN PUBLIC</span>
+      <h2 class="section-heading">Technical writing and open source.</h2>
+      <div class="oss-blog-inner">
+        <div>
+          <div class="list-block-heading">Latest from the blog</div>
+          <div id="blog-list"></div>
+        </div>
+        <div>
+          <div class="list-block-heading">Open source repositories</div>
+          <div id="repo-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section achievements decor-host" id="achievements">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container reveal">
+      <span class="section-eyebrow">ACHIEVEMENTS</span>
+      <h2 class="section-heading">A track record, not just a promise.</h2>
+      <div class="progress-stepper" id="milestone-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonial decor-host">
+    <div class="decor-ring"></div>
+    <div class="decor-glow"></div>
+    <div class="container reveal">
+      <span class="section-eyebrow">TESTIMONIALS</span>
+      <h2 class="section-heading">From clients and graduates alike.</h2>
+      <div class="testimonial-grid" id="testimonial-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-us brand-dark">
+    <div class="brand-glow-blob"></div>
+    <div class="container contact-inner reveal">
+      <div class="contact-left">
+        <span class="section-eyebrow on-dark">GET STARTED</span>
+        <h2 class="section-heading on-dark">Whichever brought you here, let's talk.</h2>
+        <p class="contact-desc">
+          Whether you need software built or you're ready to start building it yourself, the first step is the same
+          conversation.
+        </p>
+        <div class="contact-buttons">
+          <button class="base-button secondary-btn" aria-label="Start a project inquiry">Start a Project</button>
+          <button class="base-button btn-white" aria-label="Apply to a training program">Apply to a Program</button>
+        </div>
+      </div>
+      <div class="contact-illustration">
+        <img src="images/contact-partnership.png" alt="Partnership illustration" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer brand-dark">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-inner">
+          <!-- Brand Column -->
+          <div>
+            <div class="logo">
+              <a class="logo-img" aria-label="Stucknot Home"></a>
+            </div>
+            <p class="footer-brand-desc">Building production software and training developers through structured mentorship. One team, two things we're proud of.</p>
+            <div class="footer-social">
+              <a href="#" class="footer-social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4l11.733 16H20L8.267 4H4z"/>
+                  <path d="M4 20l6.768-6.768M13.232 10.768L20 4"/>
+                </svg>
+              </a>
+              <a href="#" class="footer-social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Company Column -->
+          <div>
+            <div class="footer-col-heading">Company</div>
+            <div class="footer-links">
+              <a href="#work">Work</a>
+              <a href="#programs">Programs</a>
+              <a href="#tech">Tech Stack</a>
+              <a href="#blog">Blog</a>
+              <a href="#achievements">About</a>
+            </div>
+          </div>
+
+          <!-- Connect Column -->
+          <div>
+            <div class="footer-col-heading">Connect</div>
+            <div class="footer-links">
+              <a href="#">Careers</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Open Source</a>
+              <a href="#">Partner With Us</a>
+            </div>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div>
+            <div class="footer-col-heading">Stay Updated</div>
+            <p class="footer-newsletter-desc">Get the latest on projects, programs, and open-source drops. No spam, ever.</p>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault();">
+              <input type="email" class="footer-newsletter-input" placeholder="you@example.com" aria-label="Email address" required>
+              <button type="submit" class="footer-newsletter-btn">Subscribe</button>
+            </form>
+            <p class="footer-newsletter-note">We respect your inbox. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Stucknot. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <span>Software + Education, one company.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
