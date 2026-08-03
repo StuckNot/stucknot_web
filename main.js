@@ -45,20 +45,6 @@ const DATA = {
     { quote: "I went from tutorials to shipping real production code within two months of mentorship.", name: "Rohit Verma", role: "Program Graduate, now Backend Engineer", type: "student" },
     { quote: "Their open-source tooling saved us weeks of internal setup on our own stack.", name: "Karan Shah", role: "CTO, Fintech Startup", type: "client" }
   ],
-  techStack: [
-    { name: "React", category: "Frontend", icon: "react" },
-    { name: "Next.js", category: "Frontend", icon: "next" },
-    { name: "TypeScript", category: "Frontend", icon: "ts" },
-    { name: "Django", category: "Backend", icon: "django" },
-    { name: "Node.js", category: "Backend", icon: "node" },
-    { name: "Python", category: "Backend", icon: "python" },
-    { name: "Flutter", category: "Mobile", icon: "flutter" },
-    { name: "Firebase", category: "Cloud", icon: "firebase" },
-    { name: "PostgreSQL", category: "Database", icon: "postgres" },
-    { name: "AWS", category: "Cloud", icon: "aws" },
-    { name: "Docker", category: "DevOps", icon: "docker" },
-    { name: "Stripe API", category: "Integration", icon: "stripe" }
-  ]
 };
 
 const ICONS = {
@@ -68,20 +54,6 @@ const ICONS = {
   person: '<path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 15a5 5 0 100-10 5 5 0 000 10z"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/>',
   code: '<path fill="none" stroke="currentColor" stroke-width="1.8" d="M9 18l6-12M4 8l-2 4 2 4M20 8l2 4-2 4"/>',
   handshake: '<path fill="none" stroke="currentColor" stroke-width="1.8" d="M11 14l-2.5-2.5a2 2 0 00-2.8 0L4 13.2M13 14l2.5-2.5a2 2 0 012.8 0L20 13.2M11 14l1 1a1.5 1.5 0 002-2M13 14l-1 1a1.5 1.5 0 01-2-2"/>',
-  
-  // Tech stack icons — clean, recognizable monochrome SVGs
-  react: '<circle cx="12" cy="12" r="2.2" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(120 12 12)"/>',
-  next: '<circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 8v8M8 8l9 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8v5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
-  ts: '<rect x="2" y="2" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M7 10h6M10 10v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14.5 14c0-1.4 1-2 2.2-2s2.2.6 2.2 1.5c0 2-4.4 1.5-4.4 3.5 0 .9 1 1.5 2.2 1.5s2.2-.6 2.2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
-  django: '<path d="M6 4h4v11c0 3-1.5 5-4.5 5-1.5 0-2.5-.5-3-.8l.5-2.5c.4.3 1 .5 1.6.5 1.2 0 1.9-.8 1.9-2.2V4h-.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="6.5" r=".8" fill="currentColor"/><path d="M13 4h4v2.5c0 0 1.5-.5 2.5-.5 2.5 0 3.5 2 3.5 4.5 0 3-2 5-5 5-1.5 0-3-.5-5-1.5V4zm4 4c-.5 0-1 .2-1 .2v4.3c.3.2.7.3 1.2.3 1.3 0 2-.8 2-2.5 0-1.5-.7-2.3-2.2-2.3z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>',
-  node: '<path d="M12 2.5L3 7.5v9l9 5 9-5v-9l-9-5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M3 7.5l9 5 9-5M12 12.5V22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>',
-  python: '<path d="M12 2C9 2 7 3 7 5v2h5v1H6c-2 0-3 1.5-3 3.5v3C3 16.5 4 18 6 18h1.5v-2.5c0-2 1.5-3.5 3.5-3.5h4c1.5 0 3-1 3-2.5V5c0-2-2-3-6-3zm-2.5 2a1 1 0 110 2 1 1 0 010-2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22c3 0 5-1 5-3v-2h-5v-1h6c2 0 3-1.5 3-3.5v-3c0-2-1-3.5-3-3.5h-1.5v2.5c0 2-1.5 3.5-3.5 3.5h-4c-1.5 0-3 1-3 2.5V19c0 2 2 3 6 3zm2.5-2a1 1 0 110-2 1 1 0 010 2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>',
-  flutter: '<path d="M14 2L4 12l3.5 3.5L20 2h-6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 12.5L10.5 16 14 19.5h6l-3.5-3.5L20 12.5h-6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>',
-  firebase: '<path d="M4 18L6.5 3.5c.1-.4.5-.5.7-.2l2.8 5.2L4 18z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 8.5l1.5-3c.2-.4.6-.4.8 0l7.7 12.5-10-5L10 8.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 18l8 4.5c.4.2.8.2 1.2 0L20 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>',
-  postgres: '<ellipse cx="12" cy="7" rx="8" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 7v5c0 2.2 3.6 4 8 4s8-1.8 8-4V7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 12v5c0 2.2 3.6 4 8 4s8-1.8 8-4v-5" fill="none" stroke="currentColor" stroke-width="1.5"/>',
-  aws: '<path d="M6.5 13.5c0 0 .5 1.5 2 2s4 .5 5.5-.5 2-2 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M3 11l3 2 3-6 3 6 3-6 3 6 3-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 15c1.5-.5 2.5-1 2.5-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
-  docker: '<path d="M2 13h4v-3H2v3zm5 0h4v-3H7v3zm5 0h4v-3h-4v3zm5 0h4v-3h-4v3zM7 9h4V6H7v3zm5 0h4V6h-4v3zM7 5h4V2H7v3z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M22 13c0 0-1-2.5-3-2.5-.5 0-1 .1-1.5.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 14c0 4 3 7.5 10 7.5s10-3.5 10-7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
-  stripe: '<rect x="2" y="3" width="20" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 8c-2 0-3.5.8-3.5 2.2 0 2.8 5.5 2 5.5 4.3 0 1.2-1.2 2-3.2 2-1.5 0-2.8-.5-3.8-1.2M12 8c1.5 0 2.8.5 3.5 1.2M11.5 6v12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>'
 };
 
 function svg(iconKey){
@@ -220,7 +192,6 @@ document.querySelectorAll('.toggle-btn').forEach(function(btn){
 /* ============================================================
    FEATURED WORK — with stagger delays
    ============================================================ */
-var PROJECT_ICONS = ["arrow", "layers", "network"];
 
 function renderProjects(){
   var container = document.getElementById('projects-grid');
@@ -253,10 +224,17 @@ function renderProjects(){
     cards[middleIndex].classList.add('active');
     
     cards.forEach(function(card){
-      card.addEventListener('mouseenter', function(){
+      var activateCard = function(){
         cards.forEach(function(c){ c.classList.remove('active'); });
         card.classList.add('active');
-      });
+      };
+      card.addEventListener('mouseenter', activateCard);
+      card.addEventListener('click', activateCard);
+    });
+    
+    container.addEventListener('mouseleave', function(){
+      cards.forEach(function(c){ c.classList.remove('active'); });
+      cards[middleIndex].classList.add('active');
     });
   }
 }
@@ -294,9 +272,11 @@ function renderPrograms(){
   
   var tabsHtml = '<div class="programs-tabs-menu">';
   var contentHtml = '<div class="programs-tabs-content">';
+  var programImages = ['full_stack_visual.jpg', 'internship_visual.jpg', 'open_source_visual.jpg'];
   
   DATA.programs.forEach(function(p, i){
     var activeClass = i === 0 ? ' active' : '';
+    var imgName = programImages[i % 3];
     
     // Tab Button
     tabsHtml += '<button class="program-tab-btn' + activeClass + '" data-index="' + i + '">' +
@@ -304,13 +284,52 @@ function renderPrograms(){
       '<span class="tab-label">' + p.title + '</span>' +
     '</button>';
     
-    // Display Pane
-    contentHtml += '<div class="program-tab-pane' + activeClass + '" data-index="' + i + '">' +
-      '<div class="pane-meta">' + p.duration + ' &bull; ' + p.level + '</div>' +
-      '<h3 class="pane-title">' + p.title + '</h3>' +
-      '<p class="pane-desc">' + p.description + '</p>' +
-      '<button class="base-button outline-maroon pane-btn">Explore Track <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>' +
-    '</div>';
+      var customVisualHtml = '';
+      if (i === 0) {
+        // Full Stack: Mock IDE
+        customVisualHtml = '<div class="mock-ide">' +
+          '<div class="mock-ide-header"><div class="mac-dot"></div><div class="mac-dot"></div><div class="mac-dot"></div></div>' +
+          '<div class="mock-ide-body">' +
+            '<div class="code-line"><span class="keyword">function</span> <span class="func">buildApp</span>() {</div>' +
+            '<div class="code-line indent">return (</div>' +
+            '<div class="code-line indent-2"><span class="tag">&lt;App&gt;</span></div>' +
+            '<div class="code-line indent-3"><span class="tag">&lt;Backend</span> <span class="attr">stack</span>=<span class="string">"Node.js"</span> <span class="tag">/&gt;</span></div>' +
+            '<div class="code-line indent-3"><span class="tag">&lt;Frontend</span> <span class="attr">framework</span>=<span class="string">"React"</span> <span class="tag">/&gt;</span></div>' +
+            '<div class="code-line indent-2"><span class="tag">&lt;/App&gt;</span></div>' +
+            '<div class="code-line indent">);</div>' +
+            '<div class="code-line">}</div>' +
+          '</div>' +
+        '</div>';
+      } else if (i === 1) {
+        // Internship: Orbital Graph
+        customVisualHtml = '<div class="orbital-graph">' +
+          '<div class="orbit-center"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>' +
+          '<div class="orbit-ring ring-1"><div class="orbit-planet p1"></div></div>' +
+          '<div class="orbit-ring ring-2"><div class="orbit-planet p2"></div><div class="orbit-planet p3"></div></div>' +
+          '<div class="orbit-ring ring-3"><div class="orbit-planet p4"></div></div>' +
+        '</div>';
+      } else if (i === 2) {
+        // Open Source: Contribution Matrix
+        var matrixHtml = '';
+        for(var j=0; j<84; j++) {
+           var opacity = Math.random() > 0.4 ? Math.random() : 0.1;
+           matrixHtml += '<div class="contrib-cell" style="opacity: ' + opacity + '"></div>';
+        }
+        customVisualHtml = '<div class="contrib-matrix">' + matrixHtml + '</div>';
+      }
+      
+      // Display Pane
+      contentHtml += '<div class="program-tab-pane' + activeClass + '" data-index="' + i + '">' +
+        '<div class="pane-content-left">' +
+          '<div class="pane-meta">' + p.duration + ' &bull; ' + p.level + '</div>' +
+          '<h3 class="pane-title">' + p.title + '</h3>' +
+          '<p class="pane-desc">' + p.description + '</p>' +
+          '<button class="base-button secondary-btn pane-btn">Explore Track <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>' +
+        '</div>' +
+        '<div class="pane-content-right">' +
+          customVisualHtml +
+        '</div>' +
+      '</div>';
   });
   
   tabsHtml += '</div>';
@@ -615,34 +634,6 @@ initScrollReveal();
   });
 })();
 
-/* ============================================================
-   FEATURED WORK ACCORDION
-   ============================================================ */
-(function initWorkAccordion(){
-  var container = document.getElementById('projects-grid');
-  if (!container) return;
-  
-  var cards = container.querySelectorAll('.work-card');
-  if (cards.length === 0) return;
-  
-  // Set middle card as active by default
-  var defaultIndex = Math.floor(cards.length / 2);
-  cards[defaultIndex].classList.add('active');
-  
-  cards.forEach(function(card){
-    card.addEventListener('mouseenter', function(){
-      cards.forEach(function(c){ c.classList.remove('active'); });
-      card.classList.add('active');
-    });
-  });
-  
-  container.addEventListener('mouseleave', function(){
-    cards.forEach(function(c){ c.classList.remove('active'); });
-    if (cards[defaultIndex]) {
-      cards[defaultIndex].classList.add('active');
-    }
-  });
-})();
 
 (function initBackToTop(){
   var btn = document.getElementById('back-to-top');
@@ -659,5 +650,35 @@ initScrollReveal();
   }, { passive: true });
   btn.addEventListener('click', function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+/* ============================================================
+   MOBILE MENU TOGGLE
+   ============================================================ */
+(function initMobileMenu(){
+  var menuBtn = document.querySelector('.mobile-menu-btn');
+  var mobileNav = document.getElementById('mobile-nav');
+  var body = document.body;
+  var navLinks = document.querySelectorAll('#mobile-nav .nav-links a, #mobile-nav .header-right button');
+
+  if (!menuBtn || !mobileNav) return;
+
+  function toggleMenu() {
+    var isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    menuBtn.setAttribute('aria-expanded', !isExpanded);
+    menuBtn.classList.toggle('active');
+    mobileNav.classList.toggle('open');
+    body.classList.toggle('menu-open');
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (mobileNav.classList.contains('open')) {
+        toggleMenu();
+      }
+    });
   });
 })();
