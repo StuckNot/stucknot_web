@@ -14,9 +14,9 @@
 
 const DATA = {
   projects: [
-    { name: "RetailFlow Inventory Dashboard", client: "Regional Retail Chain", summary: "Real-time inventory tracking across 40+ store locations.", tags: ["Django", "React", "PostgreSQL"], year: 2025, image: "images/retailflow-dashboard.jpg" },
-    { name: "PayEase Merchant Portal", client: "Fintech Startup", summary: "Merchant onboarding and transaction reporting platform.", tags: ["Next.js", "Node.js", "Stripe API"], year: 2025, image: "images/payease-portal.jpg" },
-    { name: "CampusConnect Mobile App", client: "EdTech Client", summary: "Cross-platform app connecting students with campus services.", tags: ["Flutter", "Firebase"], year: 2024, image: "images/campusconnect-app.jpg" }
+    { name: "RetailFlow Inventory Dashboard", client: "Regional Retail Chain", summary: "Real-time inventory tracking across 40+ store locations.", tags: ["Django", "React", "PostgreSQL"], year: 2025, image: "images/retailflow-dashboard.webp" },
+    { name: "PayEase Merchant Portal", client: "Fintech Startup", summary: "Merchant onboarding and transaction reporting platform.", tags: ["Next.js", "Node.js", "Stripe API"], year: 2025, image: "images/payease-portal.webp" },
+    { name: "CampusConnect Mobile App", client: "EdTech Client", summary: "Cross-platform app connecting students with campus services.", tags: ["Flutter", "Firebase"], year: 2024, image: "images/campusconnect-app.webp" }
   ],
   programs: [
     { title: "Full-Stack Development Track", duration: "16 weeks", level: "Beginner to job-ready", description: "From fundamentals to a production-grade capstone, built with a real mentor team." },
@@ -83,7 +83,7 @@ function svg(iconKey){
 
 const HERO_CONTENT = {
   company: {
-    trust: ["40+ projects shipped", "12 industries served", "98% client retention"],
+    trust: ["10+ projects shipped", "5 industries served", "85% client retention"],
     eyebrow: "FOR BUSINESSES",
     headline: ["Production software,", "built by engineers we trained ourselves."],
     sub: "From first spec to post-launch support — delivered by a team we've mentored from day one, not hired off a resume.",
@@ -96,7 +96,7 @@ const HERO_CONTENT = {
     ]
   },
   student: {
-    trust: ["120+ developers trained", "85% placed within 90 days", "18 open-source repos"],
+    trust: ["150+ developers trained", "85% placed within 90 days", "10+ open-source repos"],
     eyebrow: "FOR STUDENTS",
     headline: ["We build developers,", "not just certificates."],
     sub: "Real client projects, mentors who ship in production, and a straight line to your first job.",
@@ -250,12 +250,32 @@ function renderTechStack(){
   ];
   
   var iconsHtml = iconNames.map(function(name) {
-    return '<img src="https://skillicons.dev/icons?i=' + name + '&theme=light" alt="' + name + '" class="tech-icon-img" />';
+    return '<img src="images/tech-icons/' + name + '.svg" alt="' + name + '" class="tech-icon-img" />';
   }).join('');
   
   var marqueeHtml = '<div class="tech-marquee-track">' + iconsHtml + iconsHtml + '</div>';
   
   var container = document.getElementById('tech-marquee');
+  if (container) {
+    container.innerHTML = marqueeHtml;
+  }
+}
+
+/* ============================================================
+   OUR PARTNERS
+   ============================================================ */
+function renderPartners(){
+  var partners = ['dseu.png', 'maples.png', 'geetauniversity.webp', 'gtbit.png', 'igdtu.png'];
+  
+  var partnersHtml = partners.map(function(filename) {
+    var altName = filename.split('.')[0].toUpperCase();
+    return '<div class="partner-badge"><img src="images/partners/' + filename + '" alt="' + altName + '" class="partner-logo-img" /></div>';
+  }).join('');
+  
+  // Duplicate 4x to fill wide desktop screens
+  var marqueeHtml = '<div class="partners-marquee-track">' + partnersHtml + partnersHtml + partnersHtml + partnersHtml + '</div>';
+  
+  var container = document.getElementById('partners-marquee');
   if (container) {
     container.innerHTML = marqueeHtml;
   }
@@ -533,14 +553,17 @@ function initScrollReveal(){
 /* ============================================================
    INIT
    ============================================================ */
-renderHero('company');
-renderProjects();
-renderPrograms();
-renderBlogAndRepos();
-renderTechStack();
-renderAchievements();
-renderTestimonials();
-initScrollReveal();
+  if (document.getElementById('projects-grid')) {
+    renderHero('company');
+    renderProjects();
+    renderPrograms();
+    renderBlogAndRepos();
+    renderTechStack();
+    renderPartners();
+    renderAchievements();
+    renderTestimonials();
+    initScrollReveal();
+  }
 /* ============================================================
    FLYWHEEL INTERACTION
    ============================================================ */
@@ -682,3 +705,50 @@ initScrollReveal();
     });
   });
 })();
+
+/* ==========================================================================
+   V3 CONTACT PAGE - INTERACTIVE FLOW
+   ========================================================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const step1 = document.getElementById('v3-step-1');
+  if (!step1) return; // Exit if not on the contact page
+
+  const stepBiz = document.getElementById('v3-step-biz');
+  const stepStu = document.getElementById('v3-step-stu');
+  const title = document.querySelector('.v3-card h2');
+  const subtitle = document.querySelector('.v3-card p.card-text');
+
+  const ogTitle = title.innerText;
+  const ogSub = subtitle.innerText;
+
+  const btnBiz = document.getElementById('btn-v3-biz');
+  if (btnBiz) {
+    btnBiz.addEventListener('click', () => {
+      step1.style.display = 'none';
+      stepBiz.style.display = 'block';
+      title.innerText = 'Build Software';
+      subtitle.innerText = 'Tell us about your project and goals.';
+    });
+  }
+
+  const btnStu = document.getElementById('btn-v3-stu');
+  if (btnStu) {
+    btnStu.addEventListener('click', () => {
+      step1.style.display = 'none';
+      stepStu.style.display = 'block';
+      title.innerText = 'Join Program';
+      subtitle.innerText = 'Apply for the upcoming mentorship cohort.';
+    });
+  }
+
+  document.querySelectorAll('.v3-back-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      stepBiz.style.display = 'none';
+      stepStu.style.display = 'none';
+      step1.style.display = 'grid';
+      title.innerText = ogTitle;
+      subtitle.innerText = ogSub;
+    });
+  });
+});
+
